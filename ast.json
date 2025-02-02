@@ -1,0 +1,1697 @@
+[
+  {
+    "type": "file",
+    "fileName": "BaseEntity.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "BaseEntity",
+        "methods": [
+          {
+            "type": "method",
+            "name": "getId",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "setId",
+            "parameters": [
+              {
+                "type": "Integer",
+                "name": "id"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "isNew",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "NamedEntity.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "NamedEntity",
+        "methods": [
+          {
+            "type": "method",
+            "name": "getName",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "setName",
+            "parameters": [
+              {
+                "type": "String",
+                "name": "name"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "toString",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "package-info.java",
+    "entities": []
+  },
+  {
+    "type": "file",
+    "fileName": "Person.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "Person",
+        "methods": [
+          {
+            "type": "method",
+            "name": "getFirstName",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "setFirstName",
+            "parameters": [
+              {
+                "type": "String",
+                "name": "firstName"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "getLastName",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "setLastName",
+            "parameters": [
+              {
+                "type": "String",
+                "name": "lastName"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "Owner.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "Owner",
+        "methods": [
+          {
+            "type": "method",
+            "name": "getAddress",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "setAddress",
+            "parameters": [
+              {
+                "type": "String",
+                "name": "address"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "getCity",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "setCity",
+            "parameters": [
+              {
+                "type": "String",
+                "name": "city"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "getTelephone",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "setTelephone",
+            "parameters": [
+              {
+                "type": "String",
+                "name": "telephone"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "getPets",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "addPet",
+            "parameters": [
+              {
+                "type": "Pet",
+                "name": "pet"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "getPet",
+            "parameters": [
+              {
+                "type": "String",
+                "name": "name"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "getPet",
+            "parameters": [
+              {
+                "type": "Integer",
+                "name": "id"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "getPet",
+            "parameters": [
+              {
+                "type": "String",
+                "name": "name"
+              },
+              {
+                "type": "boolean",
+                "name": "ignoreNew"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "toString",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "addVisit",
+            "parameters": [
+              {
+                "type": "Integer",
+                "name": "petId"
+              },
+              {
+                "type": "Visit",
+                "name": "visit"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "OwnerController.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "OwnerController",
+        "methods": [
+          {
+            "type": "constructor",
+            "name": "OwnerController",
+            "parameters": [
+              {
+                "type": "OwnerRepository",
+                "name": "owners"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "setAllowedFields",
+            "parameters": [
+              {
+                "type": "WebDataBinder",
+                "name": "dataBinder"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "findOwner",
+            "parameters": [
+              {
+                "type": "Integer",
+                "name": "ownerId"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "initCreationForm",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "processCreationForm",
+            "parameters": [
+              {
+                "type": "Owner",
+                "name": "owner"
+              },
+              {
+                "type": "BindingResult",
+                "name": "result"
+              },
+              {
+                "type": "RedirectAttributes",
+                "name": "redirectAttributes"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "initFindForm",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "processFindForm",
+            "parameters": [
+              {
+                "type": "int",
+                "name": "page"
+              },
+              {
+                "type": "Owner",
+                "name": "owner"
+              },
+              {
+                "type": "BindingResult",
+                "name": "result"
+              },
+              {
+                "type": "Model",
+                "name": "model"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "addPaginationModel",
+            "parameters": [
+              {
+                "type": "int",
+                "name": "page"
+              },
+              {
+                "type": "Model",
+                "name": "model"
+              },
+              {
+                "type": "Page<Owner>",
+                "name": "paginated"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "findPaginatedForOwnersLastName",
+            "parameters": [
+              {
+                "type": "int",
+                "name": "page"
+              },
+              {
+                "type": "String",
+                "name": "lastname"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "initUpdateOwnerForm",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "processUpdateOwnerForm",
+            "parameters": [
+              {
+                "type": "Owner",
+                "name": "owner"
+              },
+              {
+                "type": "BindingResult",
+                "name": "result"
+              },
+              {
+                "type": "int",
+                "name": "ownerId"
+              },
+              {
+                "type": "RedirectAttributes",
+                "name": "redirectAttributes"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "showOwner",
+            "parameters": [
+              {
+                "type": "int",
+                "name": "ownerId"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "OwnerRepository.java",
+    "entities": []
+  },
+  {
+    "type": "file",
+    "fileName": "Pet.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "Pet",
+        "methods": [
+          {
+            "type": "method",
+            "name": "setBirthDate",
+            "parameters": [
+              {
+                "type": "LocalDate",
+                "name": "birthDate"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "getBirthDate",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "getType",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "setType",
+            "parameters": [
+              {
+                "type": "PetType",
+                "name": "type"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "getVisits",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "addVisit",
+            "parameters": [
+              {
+                "type": "Visit",
+                "name": "visit"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "PetController.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "PetController",
+        "methods": [
+          {
+            "type": "constructor",
+            "name": "PetController",
+            "parameters": [
+              {
+                "type": "OwnerRepository",
+                "name": "owners"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "populatePetTypes",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "findOwner",
+            "parameters": [
+              {
+                "type": "int",
+                "name": "ownerId"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "findPet",
+            "parameters": [
+              {
+                "type": "int",
+                "name": "ownerId"
+              },
+              {
+                "type": "Integer",
+                "name": "petId"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "initOwnerBinder",
+            "parameters": [
+              {
+                "type": "WebDataBinder",
+                "name": "dataBinder"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "initPetBinder",
+            "parameters": [
+              {
+                "type": "WebDataBinder",
+                "name": "dataBinder"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "initCreationForm",
+            "parameters": [
+              {
+                "type": "Owner",
+                "name": "owner"
+              },
+              {
+                "type": "ModelMap",
+                "name": "model"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "processCreationForm",
+            "parameters": [
+              {
+                "type": "Owner",
+                "name": "owner"
+              },
+              {
+                "type": "Pet",
+                "name": "pet"
+              },
+              {
+                "type": "BindingResult",
+                "name": "result"
+              },
+              {
+                "type": "RedirectAttributes",
+                "name": "redirectAttributes"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "initUpdateForm",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "processUpdateForm",
+            "parameters": [
+              {
+                "type": "Owner",
+                "name": "owner"
+              },
+              {
+                "type": "Pet",
+                "name": "pet"
+              },
+              {
+                "type": "BindingResult",
+                "name": "result"
+              },
+              {
+                "type": "RedirectAttributes",
+                "name": "redirectAttributes"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "PetType.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "PetType",
+        "methods": []
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "PetTypeFormatter.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "PetTypeFormatter",
+        "methods": [
+          {
+            "type": "constructor",
+            "name": "PetTypeFormatter",
+            "parameters": [
+              {
+                "type": "OwnerRepository",
+                "name": "owners"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "print",
+            "parameters": [
+              {
+                "type": "PetType",
+                "name": "petType"
+              },
+              {
+                "type": "Locale",
+                "name": "locale"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "parse",
+            "parameters": [
+              {
+                "type": "String",
+                "name": "text"
+              },
+              {
+                "type": "Locale",
+                "name": "locale"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "PetValidator.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "PetValidator",
+        "methods": [
+          {
+            "type": "method",
+            "name": "validate",
+            "parameters": [
+              {
+                "type": "Object",
+                "name": "obj"
+              },
+              {
+                "type": "Errors",
+                "name": "errors"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "supports",
+            "parameters": [
+              {
+                "type": "Class<?>",
+                "name": "clazz"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "Visit.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "Visit",
+        "methods": [
+          {
+            "type": "constructor",
+            "name": "Visit",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "getDate",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "setDate",
+            "parameters": [
+              {
+                "type": "LocalDate",
+                "name": "date"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "getDescription",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "setDescription",
+            "parameters": [
+              {
+                "type": "String",
+                "name": "description"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "VisitController.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "VisitController",
+        "methods": [
+          {
+            "type": "constructor",
+            "name": "VisitController",
+            "parameters": [
+              {
+                "type": "OwnerRepository",
+                "name": "owners"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "setAllowedFields",
+            "parameters": [
+              {
+                "type": "WebDataBinder",
+                "name": "dataBinder"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "loadPetWithVisit",
+            "parameters": [
+              {
+                "type": "int",
+                "name": "ownerId"
+              },
+              {
+                "type": "int",
+                "name": "petId"
+              },
+              {
+                "type": "Map<String, Object>",
+                "name": "model"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "initNewVisitForm",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "processNewVisitForm",
+            "parameters": [
+              {
+                "type": "Owner",
+                "name": "owner"
+              },
+              {
+                "type": "int",
+                "name": "petId"
+              },
+              {
+                "type": "Visit",
+                "name": "visit"
+              },
+              {
+                "type": "BindingResult",
+                "name": "result"
+              },
+              {
+                "type": "RedirectAttributes",
+                "name": "redirectAttributes"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "PetClinicApplication.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "PetClinicApplication",
+        "methods": [
+          {
+            "type": "method",
+            "name": "main",
+            "parameters": [
+              {
+                "type": "String[]",
+                "name": "args"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "PetClinicRuntimeHints.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "PetClinicRuntimeHints",
+        "methods": [
+          {
+            "type": "method",
+            "name": "registerHints",
+            "parameters": [
+              {
+                "type": "RuntimeHints",
+                "name": "hints"
+              },
+              {
+                "type": "ClassLoader",
+                "name": "classLoader"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "CacheConfiguration.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "CacheConfiguration",
+        "methods": [
+          {
+            "type": "method",
+            "name": "petclinicCacheConfigurationCustomizer",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "cacheConfiguration",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "CrashController.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "CrashController",
+        "methods": [
+          {
+            "type": "method",
+            "name": "triggerException",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "WelcomeController.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "WelcomeController",
+        "methods": [
+          {
+            "type": "method",
+            "name": "welcome",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "Specialty.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "Specialty",
+        "methods": []
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "Vet.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "Vet",
+        "methods": [
+          {
+            "type": "method",
+            "name": "getSpecialtiesInternal",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "getSpecialties",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "getNrOfSpecialties",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "addSpecialty",
+            "parameters": [
+              {
+                "type": "Specialty",
+                "name": "specialty"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "VetController.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "VetController",
+        "methods": [
+          {
+            "type": "constructor",
+            "name": "VetController",
+            "parameters": [
+              {
+                "type": "VetRepository",
+                "name": "vetRepository"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "showVetList",
+            "parameters": [
+              {
+                "type": "int",
+                "name": "page"
+              },
+              {
+                "type": "Model",
+                "name": "model"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "addPaginationModel",
+            "parameters": [
+              {
+                "type": "int",
+                "name": "page"
+              },
+              {
+                "type": "Page<Vet>",
+                "name": "paginated"
+              },
+              {
+                "type": "Model",
+                "name": "model"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "findPaginated",
+            "parameters": [
+              {
+                "type": "int",
+                "name": "page"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "showResourcesVetList",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "VetRepository.java",
+    "entities": []
+  },
+  {
+    "type": "file",
+    "fileName": "Vets.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "Vets",
+        "methods": [
+          {
+            "type": "method",
+            "name": "getVetList",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "ValidatorTests.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "ValidatorTests",
+        "methods": [
+          {
+            "type": "method",
+            "name": "createValidator",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "shouldNotValidateWhenFirstNameEmpty",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "MySqlIntegrationTests.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "MySqlIntegrationTests",
+        "methods": [
+          {
+            "type": "method",
+            "name": "testFindAll",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testOwnerDetails",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "MysqlTestApplication.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "MysqlTestApplication",
+        "methods": [
+          {
+            "type": "method",
+            "name": "container",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "main",
+            "parameters": [
+              {
+                "type": "String[]",
+                "name": "args"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "OwnerControllerTests.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "OwnerControllerTests",
+        "methods": [
+          {
+            "type": "method",
+            "name": "george",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "setup",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testInitCreationForm",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessCreationFormSuccess",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessCreationFormHasErrors",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testInitFindForm",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessFindFormSuccess",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessFindFormByLastName",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessFindFormNoOwnersFound",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testInitUpdateOwnerForm",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessUpdateOwnerFormSuccess",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessUpdateOwnerFormUnchangedSuccess",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessUpdateOwnerFormHasErrors",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testShowOwner",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessUpdateOwnerFormWithIdMismatch",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "PetControllerTests.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "PetControllerTests",
+        "methods": [
+          {
+            "type": "method",
+            "name": "setup",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testInitCreationForm",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessCreationFormSuccess",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessUpdateFormSuccess",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "type": "class",
+        "name": "ProcessCreationFormHasErrors",
+        "methods": [
+          {
+            "type": "method",
+            "name": "testProcessCreationFormWithBlankName",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessCreationFormWithDuplicateName",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessCreationFormWithMissingPetType",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessCreationFormWithInvalidBirthDate",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testInitUpdateForm",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "type": "class",
+        "name": "ProcessUpdateFormHasErrors",
+        "methods": [
+          {
+            "type": "method",
+            "name": "testProcessUpdateFormWithInvalidBirthDate",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessUpdateFormWithBlankName",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "PetTypeFormatterTests.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "PetTypeFormatterTests",
+        "methods": [
+          {
+            "type": "method",
+            "name": "setup",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testPrint",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "shouldParse",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "shouldThrowParseException",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "makePetTypes",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "PetValidatorTests.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "PetValidatorTests",
+        "methods": [
+          {
+            "type": "method",
+            "name": "setUp",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testValidate",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "type": "class",
+        "name": "ValidateHasErrors",
+        "methods": [
+          {
+            "type": "method",
+            "name": "testValidateWithInvalidPetName",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testValidateWithInvalidPetType",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testValidateWithInvalidBirthDate",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "VisitControllerTests.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "VisitControllerTests",
+        "methods": [
+          {
+            "type": "method",
+            "name": "init",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testInitNewVisitForm",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessNewVisitFormSuccess",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testProcessNewVisitFormHasErrors",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "PetClinicIntegrationTests.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "PetClinicIntegrationTests",
+        "methods": [
+          {
+            "type": "method",
+            "name": "testFindAll",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testOwnerDetails",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "main",
+            "parameters": [
+              {
+                "type": "String[]",
+                "name": "args"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "PostgresIntegrationTests.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "PostgresIntegrationTests",
+        "methods": [
+          {
+            "type": "method",
+            "name": "available",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "main",
+            "parameters": [
+              {
+                "type": "String[]",
+                "name": "args"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "testFindAll",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testOwnerDetails",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "type": "class",
+        "name": "PropertiesLogger",
+        "methods": [
+          {
+            "type": "method",
+            "name": "onApplicationEvent",
+            "parameters": [
+              {
+                "type": "ApplicationPreparedEvent",
+                "name": "event"
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "name": "printProperties",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "findPropertiesPropertySources",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "ClinicServiceTests.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "ClinicServiceTests",
+        "methods": [
+          {
+            "type": "method",
+            "name": "shouldFindOwnersByLastName",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "shouldFindSingleOwnerWithPet",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "shouldInsertOwner",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "shouldUpdateOwner",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "shouldFindAllPetTypes",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "shouldInsertPetIntoDatabaseAndGenerateId",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "shouldUpdatePetName",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "shouldFindVets",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "shouldAddNewVisitForPet",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "shouldFindVisitsByPetId",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "EntityUtils.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "EntityUtils",
+        "methods": [
+          {
+            "type": "method",
+            "name": "getById",
+            "parameters": [
+              {
+                "type": "Collection<T>",
+                "name": "entities"
+              },
+              {
+                "type": "Class<T>",
+                "name": "entityClass"
+              },
+              {
+                "type": "int",
+                "name": "entityId"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "CrashControllerIntegrationTests.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "CrashControllerIntegrationTests",
+        "methods": [
+          {
+            "type": "method",
+            "name": "testTriggerExceptionJson",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testTriggerExceptionHtml",
+            "parameters": []
+          }
+        ]
+      },
+      {
+        "type": "class",
+        "name": "TestConfiguration",
+        "methods": []
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "CrashControllerTests.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "CrashControllerTests",
+        "methods": [
+          {
+            "type": "method",
+            "name": "testTriggerException",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "VetControllerTests.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "VetControllerTests",
+        "methods": [
+          {
+            "type": "method",
+            "name": "james",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "helen",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "setup",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testShowVetListHtml",
+            "parameters": []
+          },
+          {
+            "type": "method",
+            "name": "testShowResourcesVetList",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "fileName": "VetTests.java",
+    "entities": [
+      {
+        "type": "class",
+        "name": "VetTests",
+        "methods": [
+          {
+            "type": "method",
+            "name": "testSerialization",
+            "parameters": []
+          }
+        ]
+      }
+    ]
+  }
+]
